@@ -22,7 +22,8 @@ function app = (Command cmd) {
   return app(process(cmd))
 }
 ```
-  * Process returns the next command based on the current command.
+* Notes:
+  * `process` returns the next command based on the current command.
   * ALL unit tests are of form: `Given a command, when it is processed, then a command another is returned`
   * Commands can be imperative or functional. Processing imperative commands should have a cycomatic complexity of one.
   
