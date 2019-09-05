@@ -18,6 +18,7 @@ My ideas about a possible future of software development. I feel these are all a
 * What: A pattern for standardising the processing and testing of data.
 * Why: 
   * Facilitates automatic generation test data.
+  * Facilitates standardised system to consume test data.
   * Facilitates visualisation of production data within the IDE.
 * How: 
   * The top level of an application must follow the following convention:
