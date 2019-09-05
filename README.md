@@ -54,6 +54,7 @@ function testCommand = (Command cmd, Command expectedNextCmd) {
   * Imperative commands should have no branching logic.
   * The application logs all commands it executes (removing sensitive data).
   * Commands have a `fromString` function that allows commands to be reproduced from logs.
+  * Use equivalient loop for languages without tail call optimisation.
   
 ### Robot Canaries
 * What: A staggered canary process that starts with a swarm of robots.
