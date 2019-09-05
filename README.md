@@ -65,6 +65,7 @@ function testCommand = (Command cmd, Command expectedNextCmd) {
   * Makes projects have robust error monitoring.
 * How:
   * Use immutable architecture to deploy complete and independant stacks into production with a Blue/Green strategy.
+  * Some robots test core user paths, others use randomised input.
   * Use a staggered canary process using robot whitelisting > 5% > 50% > 100% (or something).
   * Cancel rollout if error rates are too high at any stage of canary process.
 
