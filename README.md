@@ -1,15 +1,20 @@
 # future-ideas
-My ideas about future possibilities in software engineering
+My ideas about a possible future of software engineering. I feel these are all achievable with today's technology.
 
-## Lightning Deployments
-* What: Apply changes to production in less than a second.
-* Why: You want to be able to evolve/fix your app as quickly as possible.
-* How:
-  * Deployment is just uploading a script.
-  * Nearly all commits are script changes anyway.
-  * Confidence can be gained via staggered canary deployments to robots and humans.
+## High-level ideas
+* Deploy your code to a production environment in less than a second.
+* Remove all environments except for production (even local development).
+* Automatically generate comprehensive fuzz/boundary/load tests that continuously execute.
+* Keep historic suite of failing tests that continuously execute.
+* Your IDE visualises production data flowing through your application's code paths (shows density etc).
+* You can "breakpoint" live production data (non-blocking, a replica of the real data that flowed through).
+* Code in your IDE automatically updates with other people's changes.
+* Production incidents will automatically generate pull request with a failing unit test.
+* The application will attempt to self-heal by figuring out how to pass the failing test.
 
-## Command Loop
+## Concepts to achieve this
+
+## The Command Loop
 * What: A design pattern for orchaestrating functional applications
 * Why: 
   * Ability to test orcahestration of functional core and imperative shell.
