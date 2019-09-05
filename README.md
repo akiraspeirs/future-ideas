@@ -1,5 +1,5 @@
 # future-ideas
-My ideas about a possible future of software development. I feel these are all achievable with today's technology.
+My ideas about a possible direction of software development. I feel these are relatively achievable with today's technology.
 
 ## High-level goals
 * Your IDE visualises live production data flowing through your application's code paths.
@@ -7,10 +7,9 @@ My ideas about a possible future of software development. I feel these are all a
 * Production incidents will automatically generate a pull request with a failing unit test.
 * The application will attempt to self-heal by figuring out how to pass the failing test.
 * Automatically generate fuzz/boundary tests that continuously execute.
-* Keep historic suite of failing tests that continuously execute.
+* Keep a historic suite of failing tests that continuously execute.
 * Deploy your code to a production environment in less than a second.
 * Remove all environments except for production (even local development).
-
 
 ## Concepts to achieve this
 
@@ -69,7 +68,6 @@ function testCommand = (Command cmd, Command expectedNextCmd) {
   * Use a staggered canary process using robot whitelisting > 5% > 50% > 100% (or something).
   * Cancel rollout if error rates are too high at any stage of canary process.
 
-
 ## How we achieve the high-level goals
 ### Your IDE visualises live production data flowing through your application's code paths.
 * A service will interpret all logged production commands and produced aggregated data about how often each command is called.
@@ -98,7 +96,7 @@ function testCommand = (Command cmd, Command expectedNextCmd) {
 * A continuously running service will check out latest master branch commits, and generate random/boundary test data files based on the command data annotations.
 * The unit tests will automatically pull in this data and we will be running fuzz/boundary tests continuously in the brackground.
 
-### Keep historic suite of failing tests that continuously execute.
+### Keep a historic suite of failing tests that continuously execute.
 * Commands that encountered production errors will be saved in a persistent data source.
 * A continuously running service will check out latest master branch commits, and run these tests.
 
