@@ -83,7 +83,7 @@ function testCommand = (Command cmd, Command expectedNextCmd) {
 * The plugin will trigger the command's process function and pause execution.
 
 ### Production incidents will automatically generate a pull request with a failing unit test.
-* A production alerting solution (eg Prometheus) will capture commands that produce an error and pass it to a service.
+* A monitoring system will capture commands that produce an error and pass it to a service.
 * The service will create a branch off master.
 * The service will add comments to the branch with all information of the incident and links to logs.
 * The service will commit a file with the failing log to the testData directory. Tests are data driven from files, so this will automatically be executed as a failing test.
