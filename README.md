@@ -66,7 +66,7 @@ function testCommand = (Command cmd, Command expectedNextCmd) {
 * How:
   * Use immutable architecture to deploy complete and independant stacks into production with a Blue/Green strategy.
   * Use a staggered canary process using robot whitelisting > 5% > 50% > 100% (or something).
-  * Revert to previous stack if error rates are too high at any stage of canary process.
+  * Cancel rollout if error rates are too high at any stage of canary process.
 
 
 ## How we achieve the high-level goals
