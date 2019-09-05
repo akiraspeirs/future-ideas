@@ -2,7 +2,7 @@
 My ideas about a possible future of software development. I feel these are all achievable with today's technology.
 
 ## High-level goals
-* Your IDE visualises live production data flowing through your application's code paths (shows density etc).
+* Your IDE visualises live production data flowing through your application's code paths.
 * You can "breakpoint" live production data (non-blocking, a replica of the real data that flowed through).
 * Production incidents will automatically generate a pull request with a failing unit test.
 * The application will attempt to self-heal by figuring out how to pass the failing test.
@@ -70,7 +70,7 @@ function testCommand = (Command cmd, Command expectedNextCmd) {
 
 
 ## How we achieve the high-level goals
-### Your IDE visualises live production data flowing through your application's code paths (shows density etc).
+### Your IDE visualises live production data flowing through your application's code paths.
 * A service will interpret all logged production commands and produced aggregated data about how often each command is called.
 * An IDE plugin wil pull down this data and visualise this to the user.
 * Logs will include a process identifier so you can visualise how commands flow on to other commands.
