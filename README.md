@@ -48,7 +48,7 @@ function testCommand = (Command cmd, Command expectedNextCmd) {
 * Notes:
   * Application recursively executes commands until there is no next command to execute.
   * All commands (except the final command) must have a next function that returns the next Command.
-  * ALL tests are of form: `Given a command with data, when next is called, it returns a new command with expected data`.
+  * ALL tests are of form: `Given a command (with data), when next is called, it returns the expected command (with data)`.
   * Tests can be driven from templated data or external data files.
   * Commands can be imperative or functional.
   * Imperative commands should have no branching logic.
